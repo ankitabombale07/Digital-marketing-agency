@@ -1,0 +1,471 @@
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+
+/* Extra Large Devices (1200px and above)
+===================================== */
+
+@media (min-width:1200px){
+
+    .container{
+
+        max-width:1140px;
+
+    }
+
+}
+
+
+
+/* Large Devices (992px - 1199px)
+===================================== */
+
+@media (max-width:1199px){
+
+
+    .hero h1{
+
+        font-size:44px;
+
+    }
+
+
+    .hero{
+
+        min-height:600px;
+
+    }
+
+
+    .navbar-nav .nav-link{
+
+        margin-left:10px;
+
+    }
+
+
+}
+
+
+
+/* Tablet Devices (768px - 991px)
+===================================== */
+
+@media (max-width:991px){
+
+
+    /* Navbar */
+
+    .navbar{
+
+        padding:15px 0;
+
+    }
+
+
+    .navbar-collapse{
+
+        background:white;
+        padding:20px;
+        margin-top:15px;
+        border-radius:10px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    }
+
+
+    .navbar-nav .nav-link{
+
+        margin-left:0;
+        padding:12px 0;
+
+    }
+
+
+
+    /* Hero */
+
+    .hero{
+
+        text-align:center;
+        padding:60px 0;
+
+    }
+
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+
+    .hero img{
+
+        margin-top:40px;
+
+    }
+
+
+
+    /* Page Banner */
+
+
+    .page-banner{
+
+        padding:70px 0;
+
+    }
+
+
+    .page-banner h1{
+
+        font-size:40px;
+
+    }
+
+
+
+    /* Service Menu */
+
+
+    .sticky-top{
+
+        position:relative!important;
+        top:0!important;
+
+    }
+
+
+    .sticky-top .nav{
+
+        flex-wrap:wrap;
+
+    }
+
+
+    .sticky-top .nav-link{
+
+        font-size:14px;
+
+    }
+
+
+
+    /* Cards */
+
+
+    .card{
+
+        margin-bottom:20px;
+
+    }
+
+
+
+    /* Footer */
+
+
+    footer .col-lg-3,
+    footer .col-lg-4{
+
+        margin-bottom:30px;
+
+    }
+
+
+}
+
+
+
+/* Mobile Devices (576px - 767px)
+===================================== */
+
+@media (max-width:767px){
+
+
+
+    /* Typography */
+
+
+    h1{
+
+        font-size:32px!important;
+
+    }
+
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+
+    h3{
+
+        font-size:22px;
+
+    }
+
+
+
+    /* Hero */
+
+
+    .hero{
+
+        padding:40px 0;
+
+    }
+
+
+    .hero .btn{
+
+        display:block;
+        width:100%;
+        margin-bottom:15px;
+
+    }
+
+
+
+    /* Images */
+
+
+    .hero img,
+    section img{
+
+        margin-bottom:25px;
+
+    }
+
+
+
+    /* Services */
+
+
+    .services .card-body{
+
+        padding:25px;
+
+    }
+
+
+
+    /* About */
+
+
+    .about{
+
+        text-align:center;
+
+    }
+
+
+
+    /* Process */
+
+
+    .process-box{
+
+        margin-bottom:20px;
+
+    }
+
+
+
+    /* Blog */
+
+
+    .card-img-top{
+
+        height:220px;
+
+    }
+
+
+
+    /* Contact */
+
+
+    .contact-form{
+
+        padding:20px!important;
+
+    }
+
+
+    .form-control,
+    .form-select{
+
+        padding:12px;
+
+    }
+
+
+
+    /* Buttons */
+
+
+    .btn-lg{
+
+        padding:10px 20px;
+
+    }
+
+
+
+    /* CTA */
+
+
+    .bg-primary h2{
+
+        font-size:26px;
+
+    }
+
+
+
+}
+
+
+
+/* Small Mobile Devices
+===================================== */
+
+@media (max-width:480px){
+
+
+
+    .hero h1{
+
+        font-size:28px!important;
+
+    }
+
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+
+
+    .page-banner h1{
+
+        font-size:32px;
+
+    }
+
+
+
+    .page-banner p{
+
+        font-size:15px;
+
+    }
+
+
+
+    .navbar-brand{
+
+        font-size:24px!important;
+
+    }
+
+
+
+    .card-body{
+
+        padding:20px;
+
+    }
+
+
+
+    .pagination .page-link{
+
+        padding:8px 12px;
+
+    }
+
+
+
+    footer{
+
+        text-align:center;
+
+    }
+
+
+
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .why-choose-section {
+        padding: 80px 0;
+    }
+
+    .why-content {
+        max-width: 100%;
+    }
+
+    .why-content h2 {
+        font-size: 40px;
+    }
+
+    .why-visual {
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .why-content h2 {
+        font-size: 34px;
+    }
+
+    .why-description {
+        font-size: 15px;
+    }
+
+    .why-features {
+        grid-template-columns: 1fr;
+    }
+
+    .why-visual {
+        padding: 15px;
+    }
+
+    .growth-card {
+        left: -5px;
+        top: 40px;
+        transform: scale(.85);
+        transform-origin: left top;
+    }
+
+    .projects-card {
+        right: -5px;
+        bottom: 40px;
+        transform: scale(.85);
+        transform-origin: right bottom;
+    }
+
+}

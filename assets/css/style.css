@@ -1,0 +1,580 @@
+/* =====================================
+   GLOBAL STYLES
+===================================== */
+
+:root {
+
+    --primary-color: #4154f1;
+    --secondary-color: #0d6efd;
+    --dark-color: #1b1b1b;
+    --light-color: #f6f9ff;
+    --text-color: #444444;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--text-color);
+    overflow-x: hidden;
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+img {
+
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+section {
+
+    overflow: hidden;
+
+}
+
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+
+#header {
+
+    transition: all 0.3s ease;
+
+}
+
+
+.navbar {
+
+    padding: 20px 0;
+
+}
+
+
+.navbar-brand {
+
+    color: var(--primary-color);
+    font-weight: 700;
+
+}
+
+
+.navbar-nav .nav-link {
+
+    color: #333;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+
+}
+
+
+.navbar-nav .nav-link:hover {
+
+    color: var(--primary-color);
+
+}
+
+
+.dropdown-menu {
+
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+.dropdown-item:hover {
+
+    background: var(--primary-color);
+    color: white;
+
+}
+
+
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+
+.btn-primary {
+
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+
+}
+
+
+.btn-primary:hover {
+
+    background: #3143d8;
+    transform: translateY(-3px);
+
+}
+
+
+.btn-outline-dark {
+
+    border-radius: 30px;
+    padding: 12px 30px;
+
+}
+
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+
+.hero {
+
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.hero h1 {
+
+    font-size: 52px;
+    line-height: 1.2;
+    color: #1a1a1a;
+
+}
+
+
+.hero p {
+
+    font-size: 18px;
+    color: #666;
+
+}
+
+
+.hero img {
+
+    animation: floating 3s infinite ease-in-out;
+
+}
+
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+
+/* =====================================
+   PAGE BANNER
+===================================== */
+
+
+.page-banner {
+
+    padding: 90px 0;
+
+}
+
+
+.page-banner h1 {
+
+    font-size: 48px;
+
+}
+
+
+
+/* =====================================
+   SERVICE CARDS
+===================================== */
+
+
+.card {
+
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12)!important;
+
+}
+
+
+.card i {
+
+    color: var(--primary-color);
+
+}
+
+
+
+.services .card-body {
+
+    padding: 35px;
+
+}
+
+
+
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
+
+.about img {
+
+    border-radius: 20px;
+
+}
+
+
+.list-group-item {
+
+    border: none;
+    padding: 15px 0;
+    font-size: 17px;
+
+}
+
+
+
+/* =====================================
+   PROCESS SECTION
+===================================== */
+
+
+.process-box {
+
+    padding: 30px;
+    border-radius: 15px;
+    background:white;
+    box-shadow:0 5px 25px rgba(0,0,0,0.08);
+
+}
+
+
+.process-box h1 {
+
+    color: var(--primary-color);
+
+}
+
+
+
+/* =====================================
+   PORTFOLIO
+===================================== */
+
+
+.portfolio img {
+
+    border-radius: 15px;
+    transition:0.4s;
+
+}
+
+
+.portfolio img:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* =====================================
+   BLOG
+===================================== */
+
+
+.card-img-top {
+
+    height:250px;
+    object-fit:cover;
+
+}
+
+
+.blog .card h4 {
+
+    font-size:22px;
+
+}
+
+
+.blog a {
+
+    color:var(--primary-color);
+
+}
+
+
+
+/* =====================================
+   CONTACT PAGE
+===================================== */
+
+
+.form-control,
+.form-select {
+
+    padding:14px;
+    border-radius:10px;
+
+}
+
+
+.form-control:focus,
+.form-select:focus {
+
+    border-color:var(--primary-color);
+    box-shadow:none;
+
+}
+
+
+textarea {
+
+    resize:none;
+
+}
+
+
+
+/* =====================================
+   FAQ
+===================================== */
+
+
+.accordion-button {
+
+    font-weight:600;
+
+}
+
+
+.accordion-button:not(.collapsed) {
+
+    background:var(--primary-color);
+    color:white;
+
+}
+
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+
+footer {
+
+    background:#111;
+
+}
+
+
+footer h4,
+footer h5 {
+
+    color:white;
+
+}
+
+
+footer p,
+footer li {
+
+    color:#bbb;
+
+}
+
+
+footer a:hover {
+
+    color:white;
+
+}
+
+
+footer ul {
+
+    padding-left:0;
+
+}
+
+
+footer li {
+
+    list-style:none;
+    margin-bottom:10px;
+
+}
+
+
+
+/* =====================================
+   CTA SECTION
+===================================== */
+
+
+.bg-primary {
+
+    background:var(--primary-color)!important;
+
+}
+
+
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+
+.fade-up {
+
+    animation:fadeUp 1s ease;
+
+}
+
+
+@keyframes fadeUp {
+
+
+    from {
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+
+.social-icons a {
+
+    width:40px;
+    height:40px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    margin-right:10px;
+
+}
+
+
+
+/* =====================================
+   STICKY SERVICE MENU
+===================================== */
+
+
+.sticky-top {
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.nav-link {
+
+    transition:0.3s;
+
+}
+
+
+.nav-link:hover {
+
+    color:var(--primary-color);
+
+}
+
+
+
+/* =====================================
+   UTILITIES
+===================================== */
+
+
+.text-primary {
+
+    color:var(--primary-color)!important;
+
+}
+
+
+.shadow {
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08)!important;
+
+}
+
+
+
+/* 30/08/2026 */
